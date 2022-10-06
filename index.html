@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AJIDE SHAMSIDEEN">
+    <meta name="description" content="Home page for Swap2Naira">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7e50d7d663.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="" type="image/x-icon">
+    <title>Swap2Naira</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo"><img src="thumbnail/swap2naira-logo.png" /></div>
+
+        <div class="ham" onclick="toggleNew()"><i id="burger" class="fa fa-bars" aria-hidden="true"></i></div>
+        
+        <div class="links" id="below">
+            <ul>
+                <li><a href="#"><span><img src="thumbnail/logo/telegram.png" alt=""></span> Join Telegram</a></li>
+                <li><a href="#"><span><img src="thumbnail/logo/transaction.png" alt=""></span> Track Transaction</a></li>
+                <li><a href="#"><span><img src="thumbnail/logo/calculator.png" alt=""></span> Calculator</a></li>
+            </ul>
+
+            <div class="account-btn" onclick="toggleMenu()"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span> <span class="acc">Account</span> <span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+
+            <div class="btns" id="btns">
+                <a href="#"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span> Log In</a>
+                <hr>
+                <a href="#"><span><i class="fa fa-sign-out"></i></span> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section1">
+
+        <div class="header">
+            <h1>Convert Your <br> Crypto to<br> Naira.</h1>
+
+            <div class="easy">Easy . Simple. Fast</div>
+
+            <div class="sell-btn">
+                <a href="">
+                    <img id="sell" src="btn-back.png" />
+                    <div class="btn-name">Sell Crypto</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img id="girly" src="thumbnail/imgs/girl-with-phone.png" alt="">
+        </div>
+
+
+        <div class="custom-shape-divider-bottom-1664801164" id="custom-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1665001422" id="custom-shape2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="section2">
+        <h3>Crypto Exchange</h3>
+
+        <article>No more slow crypto excahnge transaction!!</article>
+        <article>Get instant exchange at the best rate possible.</article>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="select-coin">
+            <div class="coin-pic"><img class="erc" src="thumbnail/sell/coin.png" alt=""></div>
+            <select>
+                <option selected value="Select Coin">Select Coin</option>
+                <option value="">Ether</option>
+                <option value="">Binance Smart Chain</option>
+                <option value="">USDT TRC20</option>
+                <option value="">USDT BEP20</option>
+                <option value="">USDC BEP20</option>
+                <option value="">BUSD BEP20</option>
+                <option value="">USDC TRC20</option>
+                <option value="">SOLANA</option>
+            </select>
+        </div>
+
+        <div class="select-coin">
+            <div class="coin-pic"><img class="erc" src="thumbnail/sell/bank.png" alt=""></div>
+            <select>
+                <option selected value="Select Bank">Select Bank</option>
+                <option value="">GT Bank</option>
+                <option value="">FCMB</option>
+                <option value="">Access Bank Plc</option>
+                <option value="">Fidelity Bank Plc</option>
+                <option value="">Zenith Bank Plc</option>
+                <option value="">Ecobank Nigeria</option>
+                <option value="">Stanbic IBTC Bank Plc</option>
+                <option value="">Sterling Bank Plc</option>
+                <option value="">Polaris Bank Limited. </option>
+                <option value="">Unity Bank Plc</option>
+                <option value="">Wema Bank Plc</option>
+                <option value="">Heritage Bank Plc</option>
+                <option value="">SunTrust Bank Nigeria Limited</option>
+                <option value="">Kuda Bank</option>
+                <option value="">Standard Chartered</option>
+                <option value="">Providus Bank Limited</option>
+                <option value="">Rubies Bank</option>
+                <option value="">Sparkle Bank</option>
+            </select>
+        </div>
+
+        <div class="acc-input">
+            <div class="briefcase"><i id="briefcase" class="fa fa-briefcase" aria-hidden="true"></i></div>
+            <input type="text" placeholder="Enter your account number" name="bank account" id="account">
+        </div>
+
+        <div class="sell-btn2">
+            <a href="">
+                <div class="btn-name2">Sell Crypto</div>
+                <img id="sell2" src="btn-back.png" />
+            </a>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="noth">
+            <div class="heading">It's Simple!</div>
+            <div class="head">Get your cash with just 4 steps.</div>
+            <div class="features">
+                <div class="marked"><span class="mark-pic"><img src="thumbnail/sell/marked.png" /></span> Get your cash with just 4 steps.</div>
+                <div class="marked"><span class="mark-pic"><img src="thumbnail/sell/marked.png" /></span> Provide your Naira bank account.</div>
+                <div class="marked"><span class="mark-pic"><img src="thumbnail/sell/marked.png" /></span> Send crypto to displayed address.</div>
+                <div class="marked"><span class="mark-pic"><img src="thumbnail/sell/marked.png" /></span> Get Naira in 15 minutes.</div>
+            </div>
+        </div>
+        
+        
+        <div class="hero-img2">
+            <img id="hero-img2" src="thumbnail/imgs/guy-with-money.png" />
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="tile"><img src="thumbnail/extra-img/tile.png" alt=""></div>
+        <div class="phone-img"><img id="phone-img" src="thumbnail/imgs/phone.png" alt=""></div>
+
+        <div class="responsiveness">
+            <div class="response">
+                <div class="repo-img"><i id="repo-img" class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+                <div class="repo-head">Good Rates</div>
+                <div class="repo-message">Trade at the best rates in the market.</div>
+            </div>
+
+            <div class="response">
+                <div class="repo-num">24</div>
+                <div class="repo-head">24Hrs Support</div>
+                <div class="repo-message">Get professional support and guide for all transaction.</div>
+            </div>
+
+            <div class="response">
+                <div class="repo-img"><i id="repo-img" class="fa fa-university" aria-hidden="true"></i></div>
+                <div class="repo-head">Nigerian Banks Supported</div>
+                <div class="repo-message">We are integrated with all Nigerian banks.</div>
+            </div>
+
+            <div class="response">
+                <div class="repo-img"><i id="repo-img" class="fa fa-credit-card-alt" aria-hidden="true"></i></div>
+                <div class="repo-head">Safe and Secure</div>
+                <div class="repo-message">Secured transactions using cryptographic state-of-the-art security processes.</div>
+            </div>
+        </div>
+
+        <div class="keep-tabs">
+            <div class="insider">
+                <div class="keep">Keep tabs of your transactions</div>
+                <div class="own-now">Sign in to your own dashboard now</div>
+            </div>
+            
+            <div class="sell-btn2" id="sell-btn2">
+                <a href="">
+                    <div class="btn-name2">Sign In</div>
+                    <img id="sell2" src="btn-back.png" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="slider-head">Don't just take our word for it</div>
+        <div class="slider-message">See what people are saying about our services</div>
+
+        <div class="slidey">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-img"><img src="thumbnail/slider-img/ese_mercy.jpeg" alt="" id="client-img"></div>
+
+                        <div class="client-message">
+                            <div class="client-name">Ese Mercy</div>
+                            <div class="client-messages">I love Swap2Naira</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-img"><img src="thumbnail/slider-img/ejiro_ogo.jpeg" alt="" id="client-img"></div>
+
+                        <div class="client-message">
+                            <div class="client-name">Ejiro Ogo</div>
+                            <div class="client-messages">I love Swap2Naira</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-img"><img src="thumbnail/slider-img/ochuko_george.jpg" alt="" id="client-img"></div>
+
+                        <div class="client-message">
+                            <div class="client-name">Ochuko George</div>
+                            <div class="client-messages">I love Swap2Naira</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-img"><img src="thumbnail/slider-img/sandra_akiti.jpeg" alt="" id="client-img"></div>
+
+                        <div class="client-message">
+                            <div class="client-name">Sandra Akiti</div>
+                            <div class="client-messages">I love Swap2Naira</div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="tile2"><img src="thumbnail/extra-img/tile.png" alt="" id="tile"></div>
+
+        <div class="happy-guy"><img src="thumbnail/imgs/guy-kneel.png" alt="" id="happy"></div>
+
+        <div class="spacer">
+            <div class="happy-head">Join over 500+ Traders Using Swap2Naira</div>
+
+            <div class="sell-btn2">
+                <a href="">
+                    <div class="btn-name2">Sell Crypto</div>
+                    <img id="sell2" src="btn-back.png" />
+                </a>
+            </div>
+        </div>
+
+        
+
+        <div class="tile2"><img src="thumbnail/extra-img/tile.png" alt="" id="tile"></div>
+    </section>
+
+    <section class="section7">
+
+        <div class="wait">Don't wait start now</div>
+
+        <div class="percentage">97% of first time users come back to use our services</div>
+
+        <div class="sell-btn2" id="sell-btn3">
+            <a href="">
+                <div class="btn-name2">Sell Crypto</div>
+                <img id="sell2" src="btn-back.png" />
+            </a>
+        </div>
+        
+    </section>
+
+    <section class="section8">
+        <div class="first-floor">
+            <div class="foot1">
+                <div class="footer-img"><img src="thumbnail/footer-img.png" alt=""></div>
+                <div class="phone-num"><a href="tel:+234-90459-98959">+234-90459-98959</a></div>
+                <div class="email"><a href="mailto:support@swap2naira.com">support@swap2naira.com</a></div>
+            </div>
+            
+            <div class="quick">
+                <div id="quick">Quick Links</div>
+                <a href="">Sell Crypto</a>
+                <a href="">Track Transactions</a>
+                <a href="">FAQ</a>
+                <a href="">Sign In</a>
+            </div>
+    
+            <div class="others">
+                <div id="others">Others</div>
+                <a href="">About Us</a>
+                <a href="">Our Rates</a>
+            </div>
+
+            
+            <div class="search-box">
+                <div class="form-header">Subscribe</div>
+                <form action="" class="search-form">
+                    <input type="email" name="search-input" id="search-box" placeholder="Get product update">
+                    <button id="search-btn" type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="first-divider"/>
+
+        <div class="second-floor">
+            <div class="second-link">
+                <div class="phone-num"><a href="tel:+234-90459-98959">+234-90459-98959</a></div>
+                <div class="email2"><a href="mailto:support@swap2naira.com">support@swap2naira.com</a></div>
+            </div>
+
+            <div class="socials">
+                <div class="facebook"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div class="instagram"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                <div class="twitter"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            </div>
+
+            <hr class="second-divider">
+
+            <div class="copyright">&copy; 2022 Swap2Naira. All rights reserved.</div>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+    <script>
+        let btns = document.getElementById("btns");
+    
+        function toggleMenu(){
+            btns.classList.toggle("openmenu")
+        }
+    </script>
+    <script>
+        let below = document.getElementById("below");
+
+        function toggleNew(){
+            below.classList.toggle("opennew")
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 15,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+
+</html>
