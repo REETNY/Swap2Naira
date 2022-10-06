@@ -794,17 +794,18 @@ body{
 }
 
 .search-form{
-    min-height: 6vh;
+    height: 6vh;
     width: 80%;
     position: relative;
     display: flex;
     align-items: center;
+    resize: none;
 }
 
 #search-box{
+    resize: none;
     width: 100%;
-    min-height: 6vh;
-    max-height: 6vh;
+    height: 100%;
     padding-right: 50px;
     outline: none;
     border: none;
