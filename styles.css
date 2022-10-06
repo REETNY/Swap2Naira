@@ -827,7 +827,16 @@ body{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: red;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.15s;
 }
+
+#search-btn:hover i{
+    transform: translateX(5px);
+}
+
+
 
 
 .first-divider{
@@ -866,7 +875,7 @@ body{
 }
 
 .facebook, .instagram, .twitter{
-    font-size: 2.4em;
+    font-size: 2.0em;
     width: 1.8em;
     height: 1.8em;
     border-radius: 50%;
@@ -878,7 +887,23 @@ body{
 }
 
 .facebook a, .twitter a, .instagram a{
-    color: white;
+    transition: scale 0.15s;
+}
+
+.facebook a{
+    color: #3b5998;
+}
+
+.twitter a{
+    color: #1DA1F2;
+}
+
+.instagram a{
+    color: rgb(228, 64, 95);
+}
+
+.facebook a:hover i, .twitter a:hover i, .instagram a:hover i{
+    transform: scale(1.5);
 }
 
 .second-divider{
@@ -917,7 +942,7 @@ body{
 
 /* desktop media query display */
 
-@media only screen and (min-width: 300px) and (max-width: 1000px){
+@media only screen and (min-width: 300px) and (max-width: 1019px){
 
     body{
         padding: 0;
@@ -926,6 +951,10 @@ body{
         width: 100vw;
         font-size: 10px;
         overflow-x: hidden;
+    }
+
+    .section1{
+        background-color: #f6feff;
     }
 
     .nav-bar{
@@ -1041,6 +1070,7 @@ body{
         grid-template-columns: 1fr 1fr;
         padding: 7em 10em;
         position: relative;
+        background-color: #ffffff;
     }
 
     .header{
@@ -1048,8 +1078,10 @@ body{
     }
 
     .header h1{
-        font-size: 5em;
+        font-size: 6em;
         text-align: left;
+        line-height: 1.2em;
+        color: #212529;
     }
 
     .header .easy{
@@ -1403,6 +1435,10 @@ body{
 @media only screen and (min-width: 768px) and (max-width: 1019px){
     body{
         font-size: 10px;
+    }
+
+    .section1{
+        background-color: #ffffff;
     }
 
 
