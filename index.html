@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/7e50d7d663.js"></script>
     <script src="js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="icon" href="/web-icon/favicon.ico" type="image/x-icon">
     <title>Swap2Naira</title>
 </head>
@@ -52,6 +56,10 @@
                     <img id="sell" src="btn-back.png" />
                     <div class="btn-name">Sell Crypto</div>
                 </a>
+            </div>
+
+            <div class="coin-img">
+                <img src="/thumbnail/coin-logo.png" class="coin-logo" alt="">
             </div>
         </div>
 
@@ -203,43 +211,50 @@
         <div class="slider-head">Don't just take our word for it</div>
         <div class="slider-message">See what people are saying about our services</div>
 
-        <div class="slidey">
-            <div class="swiper-slide">
-                <div class="client-img"><img src="thumbnail/slider-img/ese_mercy.jpeg" alt="" id="client-img"></div>
+        <div class="swiper mySwiper" id="swiper">
 
-                <div class="client-message">
-                    <div class="client-name">Ese Mercy</div>
-                    <div class="client-messages">I love Swap2Naira</div>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="client-image"><img src="thumbnail/slider-img/ese_mercy.jpeg" alt="" id="client-img"></div>
+    
+                    <div class="client-message">
+                        <div class="client-name">Ese Mercy</div>
+                        <div class="client-testimony">Converting my crypto to naira was very easy with swap2naira!</div>
+                    </div>
                 </div>
+    
+                <div class="swiper-slide">
+                    <div class="client-image"><img src="thumbnail/slider-img/ejiro_ogo.jpeg" alt="" id="client-img"></div>
+    
+                    <div class="client-message">
+                        <div class="client-name">Ejiroghene S. Ogo</div>
+                        <div class="client-testimony">I love what I saw when I login to the user dashboard. Swap2naira is completely loaded. It has everything I need in an exchange website.</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="client-image"><img src="thumbnail/slider-img/sandra_akiti.jpeg" alt="" id="client-img"></div>
+    
+                    <div class="client-message">
+                        <div class="client-name">Sandra Akiti</div>
+                        <div class="client-testimony">I love the speed of transaction. I got my alert in less than 5mins of sending the crypto to the wallet address. Nice service.</div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="client-image"><img src="thumbnail/slider-img/ochuko_george.jpg" alt="" id="client-img"></div>
+    
+                    <div class="client-message">
+                        <div class="client-name">Ochuko S. George</div>
+                        <div class="client-testimony"> I will always use swap2naira to convert my crypto to naira. I love this technology. This is crypto made easy.</div>
+                    </div>
+                </div>
+    
             </div>
 
-            <div class="swiper-slide">
-                <div class="client-img"><img src="thumbnail/slider-img/ejiro_ogo.jpeg" alt="" id="client-img"></div>
-
-                <div class="client-message">
-                    <div class="client-name">Ejiro Ogo</div>
-                    <div class="client-messages">I love Swap2Naira</div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="client-img"><img src="thumbnail/slider-img/ochuko_george.jpg" alt="" id="client-img"></div>
-
-                <div class="client-message">
-                    <div class="client-name">Ochuko George</div>
-                    <div class="client-messages">I love Swap2Naira</div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="client-img"><img src="thumbnail/slider-img/sandra_akiti.jpeg" alt="" id="client-img"></div>
-
-                <div class="client-message">
-                    <div class="client-name">Sandra Akiti</div>
-                    <div class="client-messages">I love Swap2Naira</div>
-                </div>
-            </div>
         </div>
+
     </section>
 
     <section class="section6">
@@ -337,11 +352,12 @@
 
 
     <script>
-        let btns = document.getElementById("btns");
-    
-        function toggleMenu(){
-            btns.classList.toggle("openmenu")
-        }
+
+    let btns = document.getElementById("btns");
+
+    function toggleMenu(){
+        btns.classList.toggle("openmenu")
+    }
     </script>
 
     <script>
@@ -352,7 +368,18 @@
         }
     </script>
 
-    
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 
 </html>
