@@ -594,9 +594,13 @@ body{
     height: auto;
 }
 
+.swiper-wrapper{
+    column-gap: 6px;
+}
+
 
 .swiper-slide{
-    width: 80%;
+    max-width: 95%;
     text-align: center;
     font-size: 18px;
     background: rgb(216, 211, 211);
@@ -620,7 +624,7 @@ body{
 }
 
 .swiper-slide:last-child{
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .client-image{
